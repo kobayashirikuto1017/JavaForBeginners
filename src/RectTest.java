@@ -16,12 +16,7 @@ public class RectTest extends MyFrame{
 	  setColor(100,100,100);
 	  fillRect(90,100,30,30);
 	  
-	  for(int i = 1; i>10;i++) 
-	  {
-		 
-		  fillRect(10*i,10*i,90,90);
-		 
-	  }
+	  
   }
 	
 }

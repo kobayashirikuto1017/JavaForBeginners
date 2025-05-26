@@ -6,7 +6,7 @@ public class Start {
     System.out.println("プログラムを開始します");
     
     
-    MyFrame frame1 = new RectTest();
+    MyFrame frame1 = new OvalTest();
 	}
   
 }
