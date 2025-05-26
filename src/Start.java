@@ -5,8 +5,8 @@ public class Start {
 		// TODO 自動生成されたメソッド・スタブ
     System.out.println("プログラムを開始します");
     
-    
-    MyFrame frame1 = new OvalTest();
+   
+    MyFrame frame１ = new OvalTest();
 	}
   
 }
