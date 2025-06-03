@@ -6,7 +6,7 @@ public class Start {
     System.out.println("プログラムを開始します");
     
    
-    MyFrame frame１ = new DisplayCar();
+    MyFrame frame１ = new DisplayCarVector();
 	}
   
 }
