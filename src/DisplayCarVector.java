@@ -58,7 +58,7 @@ public class DisplayCarVector  extends MyFrame{
 			clear();
 			for(int j=0; j<cars.size(); j++) {
 				cars.get(j).draw(this);
-				cars.get(j).move();
+				cars.get(j).move(this);
 			}
 			
 			
