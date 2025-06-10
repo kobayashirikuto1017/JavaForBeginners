@@ -1,5 +1,7 @@
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
-public class Car extends Vehicle{
+public class Car extends Vehicle implements KeyListener{
 	
 	
  public Car(int x, int y, int vx, int vy) {
@@ -18,5 +20,38 @@ public void draw(MyFrame frame) {
 
 
 
+}
+public void keyPressed(KeyEvent e) {
+	System.out.println("キーが押されました");
+	if(e.getKeyCode()==KeyEvent.VK_LEFT) {
+		vx=-5;
+	}
+	if(e.getKeyCode()==KeyEvent.VK_RIGHT) {
+		vx=5;
+	}
+	if(e.getKeyCode()==KeyEvent.VK_DOWN) {
+		vy=5;
+	}
+	if(e.getKeyCode()==KeyEvent.VK_UP) {
+		vy=-5;
+	}
+}
+public void keyReleased(KeyEvent e) {
+	vx=0;
+	vy=0;
+}
+public void keyTyped(KeyEvent e) {
+	if(e.getKeyCode()==KeyEvent.VK_LEFT) {
+		vx=0;
+	}
+	if(e.getKeyCode()==KeyEvent.VK_RIGHT) {
+		vx=0;
+	}
+	if(e.getKeyCode()==KeyEvent.VK_DOWN) {
+		vy=0;
+	}
+	if(e.getKeyCode()==KeyEvent.VK_UP) {
+		vy=0;
+	}
 }
 }

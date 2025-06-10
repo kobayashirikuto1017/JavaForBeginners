@@ -19,13 +19,16 @@ public class Vehicle {
 //				x=-80;
 //			}
 		 
+//		 8-EX
 		 int width = f.getWidth();
+		 
 		 if(x<-80) {
-				x=width;
+				x=width +100;
 			}
 		 else	if(x>width) {
-				x=-80;
+				x=-80 +100;
 			}
+		 
 	 }
 	public void draw(MyFrame f) {
 		// TODO 自動生成されたメソッド・スタブ
